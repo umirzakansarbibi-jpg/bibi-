@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мои отзывы</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>⭐ Отзывы пользователей</h1>
+
+        <p class="subtitle">
+            Оставьте свой отзыв и поставьте оценку
+        </p>
+
+        <h2>Оставить отзыв</h2>
+
+        <label for="name">Ваше имя</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Введите ваше имя"
+        >
+
+        <label for="comment">Ваш комментарий</label>
+        <textarea
+            id="comment"
+            placeholder="Напишите комментарий..."
+        ></textarea>
+
+        <label>Ваша оценка</label>
+
+        <div class="stars" id="stars">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+        </div>
+
+        <button id="save">
+            💾 Сохранить отзыв
+        </button>
+
+        <h2 style="margin-top: 30px;">
+            Все отзывы
+        </h2>
+
+        <div id="reviews">
+            Пока отзывов нет.
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
